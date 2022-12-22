@@ -1,0 +1,38 @@
+# GET
+
+GET https://ticketing.dev/api/tickets
+Content-Type: application/json
+
+###
+
+GET https://ticketing.dev/api/tickets/63938641af8240ae87f1a9c6
+Content-Type: application/json
+
+### POST not logged in
+POST https://ticketing.dev/api/tickets
+Content-Type: application/json
+
+{
+
+}
+
+### POST
+
+POST https://ticketing.dev/api/tickets
+Cookie: session=eyJqd3QiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZJall6T1RNNE5USTBOelU0WmpoaE1UYzVZelpoTkRReE5pSXNJbVZ0WVdsc0lqb2lkR1Z6ZEVCMFpYTjBMbU52YlNJc0ltbGhkQ0k2TVRZM01EWXhNakkyTUgwLjRjYXB1Q21LOHoyTUE3aWN5NDlTY0t0MjJmQWVVUnJ6TE8xdW5kdWFDQWcifQ==
+Content-Type: application/json
+
+{
+ "title": "Concert super bowl",
+ "price": 20
+}
+
+###
+PUT https://ticketing.dev/api/tickets/639f00bdbecf9fc91ebdeec3
+Cookie: session=eyJqd3QiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZJall6T1RNNE5USTBOelU0WmpoaE1UYzVZelpoTkRReE5pSXNJbVZ0WVdsc0lqb2lkR1Z6ZEVCMFpYTjBMbU52YlNJc0ltbGhkQ0k2TVRZM01EWXhNakkyTUgwLjRjYXB1Q21LOHoyTUE3aWN5NDlTY0t0MjJmQWVVUnJ6TE8xdW5kdWFDQWcifQ==
+Content-Type: application/json
+
+{
+  "title": "ticket updated",
+  "price": 25
+}

@@ -1,0 +1,29 @@
+###
+
+###
+
+GET https://ticketing.dev/api/users/currentuser
+# Cookie: session=eyJqd3QiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZJall6T0dVMllXSTVOV1UyTWpjeVlqRmhPR1V5TnpBeFpTSXNJbVZ0WVdsc0lqb2lkbUZrYkdWdWRHRmtaV2x1WjBCMFpYTjBMbU52YlNJc0ltbGhkQ0k2TVRZM01ESTNOemd4TjMwLmR3d3hSTHlLckJWbkVvQ1EySUVZcS1PS0YxQWFMbVBYQVA4eGVCczFOTkUifQ==
+Content-Type: application/json
+
+###
+POST https://ticketing.dev/api/users/signup
+Content-Type: application/json
+
+{
+    "email": "vadlentadeing@test.com",
+    "password": "tsts"
+}
+
+###
+POST https://ticketing.dev/api/users/signin
+Content-Type: application/json
+
+{
+    "email": "vadlentadeing@test.com",
+    "password": "tsts"
+}
+
+###
+POST https://ticketing.dev/api/users/signout
+Content-Type: application/json

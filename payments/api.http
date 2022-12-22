@@ -1,0 +1,8 @@
+POST https://ticketing.dev/api/payments
+Cookie: session=eyJqd3QiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZJall6T1RNNE5USTBOelU0WmpoaE1UYzVZelpoTkRReE5pSXNJbVZ0WVdsc0lqb2lkR1Z6ZEVCMFpYTjBMbU52YlNJc0ltbGhkQ0k2TVRZM01EWXhNakkyTUgwLjRjYXB1Q21LOHoyTUE3aWN5NDlTY0t0MjJmQWVVUnJ6TE8xdW5kdWFDQWcifQ==
+Content-Type: application/json
+
+{
+ "token": "tok_visa",
+ "orderId": "63a31db42c8d95d68bb143d9"
+}

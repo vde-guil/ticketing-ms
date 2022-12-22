@@ -1,0 +1,34 @@
+# GET
+
+GET https://ticketing.dev/api/orders
+Cookie: session=eyJqd3QiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZJall6WVRNNFlUUm1ZVGN6WVRFd05UWTJZell5WXpRMFppSXNJbVZ0WVdsc0lqb2lkR1Z6ZEVCMFpYTjBMbU52YlNJc0ltbGhkQ0k2TVRZM01UWTJNakUxT1gwLnZ4eWpCb0wtbEVzRzRMTFU3MW9YVXI4MHVwdkRzWUhpclYxMFRqN2ZjamMifQ==
+Content-Type: application/json
+
+###
+
+GET https://ticketing.dev/api/orders/63a38bdb47a5c48872f3c76a
+Cookie: session=eyJqd3QiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZJall6WVRNNFlUUm1ZVGN6WVRFd05UWTJZell5WXpRMFppSXNJbVZ0WVdsc0lqb2lkR1Z6ZEVCMFpYTjBMbU52YlNJc0ltbGhkQ0k2TVRZM01UWTJNakUxT1gwLnZ4eWpCb0wtbEVzRzRMTFU3MW9YVXI4MHVwdkRzWUhpclYxMFRqN2ZjamMifQ==
+Content-Type: application/json
+
+### POST not logged in
+POST https://ticketing.dev/api/tickets
+Content-Type: application/json
+
+{
+
+}
+
+### POST
+
+POST https://ticketing.dev/api/orders
+Cookie: session=eyJqd3QiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZJall6T1RNNE5USTBOelU0WmpoaE1UYzVZelpoTkRReE5pSXNJbVZ0WVdsc0lqb2lkR1Z6ZEVCMFpYTjBMbU52YlNJc0ltbGhkQ0k2TVRZM01EWXhNakkyTUgwLjRjYXB1Q21LOHoyTUE3aWN5NDlTY0t0MjJmQWVVUnJ6TE8xdW5kdWFDQWcifQ==
+Content-Type: application/json
+
+{
+ "ticketId": "63a31dad2cc62738e4518b1d"
+}
+
+###
+DELETE https://ticketing.dev/api/orders/63a31db42c8d95d68bb143d9
+Cookie: session=eyJqd3QiOiJleUpoYkdjaU9pSklVekkxTmlJc0luUjVjQ0k2SWtwWFZDSjkuZXlKcFpDSTZJall6T1RNNE5USTBOelU0WmpoaE1UYzVZelpoTkRReE5pSXNJbVZ0WVdsc0lqb2lkR1Z6ZEVCMFpYTjBMbU52YlNJc0ltbGhkQ0k2TVRZM01EWXhNakkyTUgwLjRjYXB1Q21LOHoyTUE3aWN5NDlTY0t0MjJmQWVVUnJ6TE8xdW5kdWFDQWcifQ==
+Content-Type: application/json
