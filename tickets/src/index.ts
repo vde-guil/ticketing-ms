@@ -5,14 +5,14 @@ import { app } from './app';
 import { OrderCancelledListener } from './events/listeners/order-cancelled-listener';
 import { OrderCreatedListener } from './events/listeners/order-created-listener';
 
-
 const startUp = async () => {
+	console.log('starting up tickets service...');
 	if (!process.env.JWT_KEY) throw new Error('JWT_KEY must be defined');
 
 	if (!process.env.MONGO_URI) throw new Error('MONGO_URI should be defined');
 
 	if (!process.env.NATS_URL) throw new Error('NATS_URL should be defined');
-	
+
 	if (!process.env.NATS_CLIENT_ID)
 		throw new Error('NATS_CLIENT_ID should be defined');
 

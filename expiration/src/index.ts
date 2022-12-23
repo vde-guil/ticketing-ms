@@ -3,6 +3,7 @@ import { natsWrapper } from './nats-wrapper';
 
 
 const startUp = async () => {
+	console.log('starting up expiration...')
 	if (!process.env.NATS_URL) throw new Error('NATS_URL should be defined');
 	
 	if (!process.env.NATS_CLIENT_ID)
