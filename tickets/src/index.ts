@@ -6,7 +6,7 @@ import { OrderCancelledListener } from './events/listeners/order-cancelled-liste
 import { OrderCreatedListener } from './events/listeners/order-created-listener';
 
 const startUp = async () => {
-	console.log('starting up tickets service...');
+	console.log('starting up tickets service....');
 	if (!process.env.JWT_KEY) throw new Error('JWT_KEY must be defined');
 
 	if (!process.env.MONGO_URI) throw new Error('MONGO_URI should be defined');
