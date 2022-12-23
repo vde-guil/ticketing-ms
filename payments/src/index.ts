@@ -5,14 +5,14 @@ import { app } from './app';
 import { OrderCancelledListener } from './events/listeners/order-cancelled-listener';
 import { OrderCreatedListener } from './events/listeners/order-created-listener';
 
-
 const startUp = async () => {
+	console.log('starting up payment service...');
 	if (!process.env.JWT_KEY) throw new Error('JWT_KEY must be defined');
 
 	if (!process.env.MONGO_URI) throw new Error('MONGO_URI should be defined');
 
 	if (!process.env.NATS_URL) throw new Error('NATS_URL should be defined');
-	
+
 	if (!process.env.NATS_CLIENT_ID)
 		throw new Error('NATS_CLIENT_ID should be defined');
 
@@ -34,8 +34,8 @@ const startUp = async () => {
 		process.on('SIGINT', () => natsWrapper.client.close());
 		process.on('SIGTERM', () => natsWrapper.client.close());
 
-		new OrderCancelledListener(natsWrapper.client).listen()
-		new OrderCreatedListener(natsWrapper.client).listen()
+		new OrderCancelledListener(natsWrapper.client).listen();
+		new OrderCreatedListener(natsWrapper.client).listen();
 
 		await mongoose.connect(process.env.MONGO_URI);
 		console.log('connected to mongoDb');
