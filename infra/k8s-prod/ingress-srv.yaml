@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: 'true' # because we use a regular expression in path posts/.../comment
 spec:
   rules:
-    - host: ticketing.dev
+    - host: www.vdeguil-ticketing-app-prod.click
       http:
         paths:
           - path: /api/payments/?(.*)
